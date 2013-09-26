@@ -1,0 +1,21 @@
+1.从Main方法开启
+  Display display = new Display();
+  Splash splash = new Splash(display);
+  ...
+  ...
+  final Spoon win = new Spoon(log, display, null);
+  
+  win.open ();//打开整个程序窗口
+
+  splash.dispose();//图片视窗关闭
+2.从构造函数public Spoon(LogWriter log, Display d, TransMeta ti, Repository rep)初始化Spoon
+	2.1
+		shell的布局设置成表单布局
+		
+		shell=new Shell(disp);
+		FormLayout layout = new FormLayout();
+		shell.setLayout (layout);
+		
+		
+		addBar();//构造工具栏
+		
